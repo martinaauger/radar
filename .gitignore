@@ -42,3 +42,12 @@ next-env.d.ts
 
 # adjunto local del pedido
 /assets
+
+# base local de Radar (se crea al arrancar)
+/data/*.sqlite
+/data/*.sqlite-*
+
+# datos personales / bases importadas
+/data/uploads/
+/data/*.sqlite
+/data/*.sqlite-*

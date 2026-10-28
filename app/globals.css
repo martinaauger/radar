@@ -8,7 +8,6 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
-  --font-mono: var(--font-sans);
   --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -39,82 +38,52 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-ink: var(--ink);
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) * 1.4);
-  --radius-2xl: calc(var(--radius) * 1.8);
-  --radius-3xl: calc(var(--radius) * 2.2);
-  --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+/* Propuesta Técnica Quantum: bordo sólido + panel blanco */
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-}
-
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background: #6b1f2a;
+  --foreground: #1a2332;
+  --card: #ffffff;
+  --card-foreground: #1a2332;
+  --popover: #ffffff;
+  --popover-foreground: #1a2332;
+  --primary: #1a2332;
+  --primary-foreground: #ffffff;
+  --secondary: #eef1f4;
+  --secondary-foreground: #1a2332;
+  --muted: #f3f5f7;
+  --muted-foreground: #6b7280;
+  --accent: #c41e24;
+  --accent-foreground: #ffffff;
+  --destructive: #c41e24;
+  --border: #d8dee6;
+  --input: #d8dee6;
+  --ring: #c41e24;
+  --brand: #c41e24;
+  --brand-foreground: #ffffff;
+  --ink: #1a2332;
+  --chart-1: #c41e24;
+  --chart-2: #6b1f2a;
+  --chart-3: #6b7280;
+  --chart-4: #94a3b8;
+  --chart-5: #e2e8f0;
+  --radius: 0.5rem;
+  --sidebar: #6b1f2a;
+  --sidebar-foreground: #f8fafc;
+  --sidebar-primary: #c41e24;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #5a1822;
+  --sidebar-accent-foreground: #f8fafc;
+  --sidebar-border: #4a141c;
+  --sidebar-ring: #c41e24;
 }
 
 @layer base {
@@ -122,46 +91,64 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply text-ink antialiased;
+    background: #6b1f2a;
   }
   html {
     @apply font-sans;
-    color-scheme: light;
+  }
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-heading), var(--font-sans), sans-serif;
   }
 }
 
-.label-sheet {
-  -webkit-print-color-adjust: exact;
-  print-color-adjust: exact;
+/* Marco: solo bordo, sin franjas ni navy */
+.quantum-frame {
+  position: relative;
+  min-height: 100vh;
+  background: #6b1f2a;
+  overflow: hidden;
 }
 
-@media print {
-  html,
-  body {
-    background: #fff !important;
-    height: auto !important;
-  }
+.quantum-panel {
+  position: relative;
+  z-index: 1;
+  margin: 0.75rem;
+  min-height: calc(100vh - 1.5rem);
+  background: #ffffff;
+  border-radius: 0 1.25rem 0 1.25rem;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.18);
+  overflow: clip;
+}
 
-  .no-print {
-    display: none !important;
-  }
-
-  .print-root {
-    display: block !important;
-    min-height: 0 !important;
-    padding: 0 !important;
-    background: #fff !important;
-  }
-
-  .label-sheet {
-    width: 170mm !important;
-    max-width: 170mm !important;
-    margin: 0 auto !important;
-    box-shadow: none !important;
-  }
-
-  @page {
-    size: A4 portrait;
-    margin: 8mm;
+@media (min-width: 768px) {
+  .quantum-panel {
+    margin: 1rem 1.5rem;
+    min-height: calc(100vh - 2rem);
+    border-radius: 0 1.5rem 0 1.5rem;
   }
 }
+
+.quantum-ribbon {
+  display: inline-flex;
+  align-items: center;
+  background: #c41e24;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.45rem 1.1rem;
+  clip-path: polygon(0 0, calc(100% - 12px) 0, 100% 50%, calc(100% - 12px) 100%, 0 100%);
+}
+
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes bar-grow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+.animate-rise { animation: rise-in 0.45s ease-out both; }
+.bar-fill { transform-origin: left; animation: bar-grow 0.6s ease-out both; }
